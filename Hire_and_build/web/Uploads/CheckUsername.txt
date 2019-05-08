@@ -1,0 +1,50 @@
+<script src="{% static 'js/jquery.min.js'   %}"></script>
+  <script>
+$(document).ready(function(){
+   $("#id_username").change(function () {      
+    
+      var username = $(this).val();
+
+      $.ajax({
+        url: '{% url "validate_username" %}',
+        data: {
+          'username': username
+        },
+        dataType: 'json',
+        success: function (data) {
+          if (data.is_taken) {
+            var msg= data.error_message;
+            //$( ".inner" ).append( "<p>Sorry</p>"+msg );
+             //console.log(msg, 'change')
+            alert("Sorry "+msg);
+      $("#btnSave").hide();
+          }
+      else
+      {
+      alert("Username is valid");
+      $("#btnSave").show();
+      }
+        }
+      });
+
+    
+    });
+});
+</script>
+
+
+
+
+In  View
+from django.http import JsonResponse
+
+def validate_username(request):
+    print("reached")
+    username = request.GET.get('username', None)
+    username=username+"@mymail.com"
+    data = {
+        'is_taken': UserRegistration.objects.filter(Username__iexact=username).exists()
+    }
+    if data['is_taken']:
+        data['error_message'] = 'A user with this username already exists.'
+    return JsonResponse(data)
