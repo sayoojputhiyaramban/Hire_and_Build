@@ -1572,7 +1572,7 @@ window.open("Add_ResourceQuantity.jsp?id="+id,'_blank','width=500,height=300,top
 	<!-- copyright -->
 	<div class="copy-right">
 		<div class="container">
-			<p>© 2017 Grocery Shoppy. All rights reserved | Design by
+			<p>© Hire and build .  | Design by Sayooj
 				<a href="http://w3layouts.com"> W3layouts.</a>
 			</p>
 		</div>
