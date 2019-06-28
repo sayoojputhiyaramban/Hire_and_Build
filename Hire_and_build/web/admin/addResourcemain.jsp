@@ -671,7 +671,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="contact-w3l">
 		<div class="container">
 			<!-- tittle heading -->
-			<h3 class="tittle-w3l">Add Resource
+			<h3 class="tittle-w3l">Adding Resources Here
 				<span class="heading-style">
 					<i></i>
 					<i></i>
@@ -727,7 +727,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- map -->
 	
 	<!-- //map -->
-	<!-- newsletter -->
+	<!-- newsletter --><!--
 	<div class="footer-top">
 		<div class="container-fluid">
 			<div class="col-xs-8 agile-leftmk">
@@ -780,7 +780,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- copyright -->
 	<div class="copy-right">
 		<div class="container">
-			<p>© 2019 Construction Resource | By Integos		</p>
+			<p>© Hire and build.  | Design by Sayooj	</p>
 		</div>
 	</div>
 	<!-- //copyright -->
